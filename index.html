@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Piggy game!</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player-active">
+        <h2>Player 1</h2>
+        <div class="current current--0">12</div>
+        <div class="score score--0">0</div>
+      </section>
+      <section class="player player--1">
+        <h2>Player 2</h2>
+        <div class="current current--1">0</div>
+        <div class="score score--1">0</div>
+      </section>
+      <img src="/images/dice-1.png" alt="dice image" class="dice" />
+      <button id="btnRoll" class="btn">Roll</button>
+      <button id="btnHold" class="btn">Hold</button>
+      <button id="btnAgain" class="btn">Play Again</button>
+    </main>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <div class="close-modal">&times;</div>
+      <h2>Gameplay</h2>
+      <p>
+        Each turn, a player repeatedly rolls a die until either a 1 is rolled or
+        the player decides to "hold": If the player rolls a 1, they score
+        nothing and it becomes the next player's turn. If the player rolls any
+        other number, it is added to their turn total and the player's turn
+        continues. <br />
+        <br />
+        The first player to score 100 or more points wins.
+      </p>
+    </div>
+    <div class="rules">?</div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
